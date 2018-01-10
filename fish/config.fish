@@ -5,7 +5,6 @@
 if test -e /snap/bin/go
         set -x GOPATH $HOME/Documents/gdrive/Projects/go
         set -x GOBIN $GOPATH/bin
-	set -x GOROOT /snap/bin
         # I know fish has a mech to set the path elsewhere.
         # This makes it portable when I setup new systems.
 	
