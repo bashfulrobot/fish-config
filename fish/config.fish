@@ -24,6 +24,10 @@ end
 
 set -x SNAPCRAFT_CONTAINER_BUILDS 1
 
+# NTFY
+
+set PATH /home/dustin/.local/bin $PATH
+
 # RESTIC
 
 #. $HOME/.restic.fish
