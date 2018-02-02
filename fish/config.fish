@@ -2,8 +2,8 @@
 
 # GO
 
-if test -e /snap/bin/go
-        set -x GOPATH $HOME/ncloud/Projects/go
+if test -e /usr/local/go/bin/go
+        set -x GOPATH $HOME/go
         set -x GOBIN $GOPATH/bin
         # I know fish has a mech to set the path elsewhere.
         # This makes it portable when I setup new systems.
