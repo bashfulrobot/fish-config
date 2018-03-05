@@ -2,8 +2,11 @@
 
 # OMF
 # omf install bobthefish
-set -g theme_nerd_fonts yes
-set -g theme_color_scheme light
+#set -g theme_nerd_fonts yes
+#set -g theme_color_scheme light
+
+# imf install budspencer
+set -U fish_key_bindings fish_vi_key_bindings
 
 # GO
 
