@@ -8,6 +8,20 @@
 # imf install budspencer
 set -U fish_key_bindings fish_vi_key_bindings
 
+## bobthefish theme
+#set -g theme_nerd_fonts yes
+#set -g theme_color_scheme light
+#set -g theme_display_git yes
+#set -g theme_display_git_dirty yes
+#set -g theme_display_git_untracked yes
+#set -g theme_display_git_ahead_verbose yes
+#set -g theme_display_git_dirty_verbose yes
+#set -g theme_git_worktree_support yes
+#set -g theme_display_user yes
+#set -g theme_display_vi yes
+#set -g theme_display_docker_machine yes
+#set -g theme_display_k8s_context yes
+
 # GO
 
 if test -e /usr/local/go/bin/go
