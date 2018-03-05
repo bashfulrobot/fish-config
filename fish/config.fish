@@ -1,5 +1,10 @@
 # Main fish config
 
+# OMF
+# omf install bobthefish
+set -g theme_nerd_fonts yes
+set -g theme_color_scheme light
+
 # GO
 
 if test -e /usr/local/go/bin/go
