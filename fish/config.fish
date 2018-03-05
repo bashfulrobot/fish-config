@@ -5,8 +5,9 @@
 #set -g theme_nerd_fonts yes
 #set -g theme_color_scheme light
 
-# imf install budspencer
+# omf install budspencer
 set -U fish_key_bindings fish_vi_key_bindings
+set -U budspencer_nogreeting
 
 ## bobthefish theme
 #set -g theme_nerd_fonts yes
@@ -46,9 +47,10 @@ end
 
 set -x SNAPCRAFT_CONTAINER_BUILDS 1
 
-# NTFY
+# NTFY / Telegram-send PIP packages
+# telegram-send is now in /usr/local/bin
 
-set PATH /home/dustin/.local/bin $PATH
+#set PATH /home/dustin/.local/bin $PATH
 
 # RESTIC
 
