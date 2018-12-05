@@ -3,5 +3,6 @@ function do-update
 	
 	set msg (hostname)"-->  host APT Update Completed"
 
-	ntfy -c $HOME/.ntfy send $msg
+	#ntfy -c $HOME/.ntfy send $msg
+	telegram-send $msg
 end 
