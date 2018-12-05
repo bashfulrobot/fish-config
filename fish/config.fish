@@ -25,6 +25,13 @@ if test -e /snap/bin/go
         end
 end
 
+# RUST
+
+if test -e $HOME/.cargo/bin/rustup
+  set PATH $HOME/.cargo/bin $PATH
+else
+  echo "Rust is not installed."
+end
 
 # SNAPCRAFT
 
