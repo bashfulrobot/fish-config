@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Config
-CONFDIR="$HOME/myconfig"
+CONFDIR="$HOME/fish-config"
 TRUECONF="$HOME/.config"
 
 # Install needed SW
@@ -20,8 +20,8 @@ rm -f fish/config.fish
 rm -rf fish/functions
 
 # Symlink all the things!
-ln -s $CONFDIR/fish-config/fish/config.fish $TRUECONF/fish/config.fish
-ln -s $CONFDIR/fish-config/fish/functions $TRUECONF/fish/functions
+ln -s $CONFDIR/fish/config.fish $TRUECONF/fish/config.fish
+ln -s $CONFDIR/fish/functions $TRUECONF/fish/functions
 
 # Install OMF
 echo "install OMF with something like: curl -L https://get.oh-my.fish | fish"
