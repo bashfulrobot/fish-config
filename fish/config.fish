@@ -15,17 +15,16 @@ if test -e /snap/bin/go
         # I know fish has a mech to set the path elsewhere.
         # This makes it portable when I setup new systems.
 
-	## When using the SNAP, no need to add `/snap/bin`
-	## as it already exists in the PATH.
-	#set PATH /snap/bin $GOBIN $PATH
-	set PATH $GOBIN $PATH
-
         # Create GOPATH structure if it does not exist
         if test ! -d $GOPATH/src/github.com/bashfulrobot
                 mkdir -p $GOPATH/{src/github.com/bashfulrobot,pkg,bin}
         end
-end
 
+	# When using the SNAP, no need to add `/snap/bin`
+        ## as it already exists in the PATH.end
+        #set PATH /snap/bin $GOBIN $PATH
+        set PATH $GOBIN $PATH
+end
 # RUST
 
 if test -e $HOME/.cargo/bin/rustup
