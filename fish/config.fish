@@ -16,7 +16,7 @@ if test -e /snap/bin/go
         # This makes it portable when I setup new systems.
 
         # Create GOPATH structure if it does not exist
-        if test ! -d $GOPATH/src/github.com/bashfulrobot
+        if test ! -d $GOPATH/bin
                 mkdir -p $GOPATH/{src/github.com/bashfulrobot,pkg,bin}
         end
 
