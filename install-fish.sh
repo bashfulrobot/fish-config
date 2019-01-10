@@ -4,14 +4,17 @@
 CONFDIR="$HOME/fish-config"
 TRUECONF="$HOME/.config"
 
+# Check if fish-config is where it belongs
+if [ ! -d "$CONFDIR" ]; then
+  echo "$CONFDIR does not exist. Please move the cloned repo to your home folder."
+  echo "Then please run the script again."
+  exit 1
+fi
+
 # Install needed SW
-sudo apt-add-repository ppa:fish-shell/release-2
+sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt update && sudo apt dist-upgrade -y
 sudo apt install fish -y
-
-# Clone repos
-cd $CONFDIR
-#git clone git@github.com:bashfulrobot/fish-config.git
 
 # Sanitize potential previous installs or links
 mkdir -p $TRUECONF/fish/functions
